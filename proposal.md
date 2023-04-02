@@ -55,8 +55,10 @@ Once the file extensions and categories have been defined, it is necessary to wr
 ### Documentation
 >Write Clear and Concise Documentation for Program 
 >>To make the "File Organizer" program accessible to users, it is important to write clear and concise documentation for its functionality. This involves documenting the program's features and usage, as well as providing examples of input/output and expected results. Tools such as Sphinx, MkDocs, and Read the Docs can be used to generate documentation in various formats, such as HTML and PDF. In addition to documenting the program's functionality, it is important to provide instructions for its use. This includes creating a user guide or manual that explains how to install and run the program, as well as how to use its various features. Sphinx, MkDocs, and Read the Docs can also be used to generate user guides or manuals. To help users understand how to use the "File Organizer" program, it is helpful to provide examples of usage and expected results. This can be done using tools such as doctest, unittest, and pytest, which allow developers to create test cases and examples of usage that can be included in documentation.
-
 ## Project Schedule
+***
 ## Collaboration Plan
+***
 ## Risks and Limitations
+***
 ## Additional Course Content
