@@ -59,6 +59,7 @@ Our project schedule is as follows:
 - Week 1: Develop the Command-Line interface 
 - Week 2: Implement File Recognition and Organization Logic 
 - Week 3: Improve user interface and experience, implement the stretch goal if time permits
+
 Testing and debugging, documentation, and website formation will be done throughout the three weeks.
 ***
 ## Collaboration Plan
