@@ -34,13 +34,26 @@ extensions = {
     ".ppt": "PowerPoint Files",
     ".csv": "CSV Files",
     ".r": "R Files",
-    ".py": "Python Files",
+    ".py": "Python Files"
 }
-
 
 # Define a function to organize the files in a folder
 def organize_files(folder_path):
-    # Iterate over each file in the folder
+    # Move all files in subdirectories to folder_path
+    for dirpath, dirnames, filenames in os.walk(folder_path):
+        for filename in filenames:
+            src_path = os.path.join(dirpath, filename)
+            dest_path = os.path.join(folder_path, filename)
+            os.rename(src_path, dest_path)
+
+    # Delete all empty subdirectories in folder_path
+    for dirpath, dirnames, filenames in os.walk(folder_path, topdown=False):
+        for dirname in dirnames:
+            dir_to_remove = os.path.join(dirpath, dirname)
+            if not os.listdir(dir_to_remove):
+                os.rmdir(dir_to_remove)
+    
+    # Organize all the files in the folder
     for file_name in os.listdir(folder_path):
         # Get the file extension
         file_extension = os.path.splitext(file_name)[1].lower()
@@ -58,7 +71,6 @@ def organize_files(folder_path):
         src_path = os.path.join(folder_path, file_name)
         dest_path = os.path.join(dest_dir, file_name)
         os.rename(src_path, dest_path)
-
 
 # Example usage:
 if __name__ == "__main__":
