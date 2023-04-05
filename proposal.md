@@ -13,16 +13,6 @@ Overall, the "File Organizer" project is intended to provide a practical solutio
 Through this project, our group wants to explore several Python skills and topics, such as file handling, directory management, and regular expressions. These topics are relevant to our project as they provide the foundation for our program’s functionality, which can be used to automate the process of file organization. In addition, we would also like to gain a better understanding of how to use the os and shutil libraries in Python, which can be used for file management. These libraries allow us to handle files and manage directories on computers. They also provide a range of functions, such as creating and deleting directories, copying and moving files, and listing directory contents. Thus, we would be able to enhance our knowledge of those topics by implementing and exploring these concepts and libraries in our project. 
 ***
 ## Implementation Plan
-### Develop Command-Line Interface
->Implement Basic Input/Output Functionality
->>The first subtask of developing the command-line interface is to implement basic input/output functionality. This involves setting up a user prompt and input to accept user commands and implementing output functionality to display results to the user. Python's built-in input() function can be used to accept user input, while sys.stdout and print() can be used to display output.
-
->Design Menu Options for User Input
->>To create a user-friendly interface, it is important to design menu options for the user to select from. This involves creating a main menu and submenus for each option, and defining options and input validation rules to ensure that the user input is valid. The curses and cmd modules can be used to create menus and submenus, while argparse can be used to define options and input validation rules.
-
->Define Functions for Each Menu Option
->>Once the menu options have been designed, it is necessary to write functions to perform specific actions for each option. For example, a function might be created to identify and move files based on their file type. Python's os and shutil modules can be used to perform file operations, such as identifying file types and moving files to appropriate categories.
-
 ### Implement File Recognition and Organization Logic
 >Identify File Extensions and Types
 >>To automate the process of file organization, it is necessary to identify file extensions and types. This can be done using Python's mimetypes module, which maps filename extensions to MIME types. A list of file extensions can be defined for each file type, allowing the program to recognize and categorize files based on their extensions.
@@ -34,7 +24,7 @@ Through this project, our group wants to explore several Python skills and topic
 >>Once the file extensions and categories have been defined, it is necessary to write logic to move files to appropriate categories. This can be done using Python's os and shutil modules, which provide functions for moving files and directories. For example, the os.rename() function can be used to move files to a new directory, while shutil.copyfile() can be used to make a copy of a file in a different directory.
 
 ### Improve User Experience
-After accomplishing the basic functionality of our program, we will implement the following stretch goals:
+After accomplishing the basic functionality of our program, we will implement the following stretch goals(note: due to time limit, we cannot ensure all the stretched goals will be met.):
 >Add Ability to Confirm or Undo File Moves
 >>To enhance the user experience, it may be helpful to add the ability to confirm or undo file moves. This allows users to preview file moves before they are executed, and to undo moves if necessary. Python's input() function can be used to prompt users to confirm or undo file moves, while the os.rename() function can be used to undo a file move.
 
@@ -55,17 +45,24 @@ After accomplishing the basic functionality of our program, we will implement th
 Once our project proposal gets approved, we will begin our project. We will have roughly 3.5 weeks to accomplish this project. The timeline of our project will follow the implementation plan we provided in the above section. 
 
 Our project schedule is as follows:
-- Week 1: Develop the Command-Line interface 
-- Week 2: Implement File Recognition and Organization Logic 
-- Week 3: Improve user interface and experience, implement the stretch goal if time permits
+- Week 1: Develop file organizer with baseline functionalities, which is to organize files based on file extensions.
+- Week 2: Implement the strech goal of organizing documents based on the content. 
+- Week 3: Write README files for instruction purposes. Improve user interface and experience, implement other stretch goals if time permits
 
 Testing and debugging, documentation, and website formation will be done throughout the three weeks.
 ***
 ## Collaboration Plan
 As this is a team project, it is important that all members of the team understand the goal as well as the implementation of the program. It is also important for both of us to be responsible and accountable for accomplishing the required or pre-defined tasks. We will be dividing and accomplishing the work relatively evenly. Additionally, we will also communicate regularly and effectively to avoid any confusion and to keep each other updated on the progress. We believe that this will ensure an effective team collaboration. 
+
+Detailed work distribution:
+Week1: Katarina will give the first draft of the project with baseline functionlaities. Angela will be elborate on the first draft, after which Katarina will implement on additional features.
+
+Week2: Katarina is responsible for identifying documents for work purposes; Angela is responsible for identifying documents for entertainment purposes.
+
+Week3: Katarina and Angela together works on the README file and see how the user interface can be improved if time permits.
 ***
 ## Risks and Limitations
-The most significant threat to this project’s success would be learning the various Python libraries and tools that are necessary for this project. Since this is a relatively new topic and concept to both of us, it would require a lot of research in order to successfully implement all the functionalities in our program. In addition, the time that is available for us to accomplish this project is also very limited as we only have roughly about 3.5 weeks to complete the program as well as the project website. 
+The most significant threat to this project’s success would be learning the various Python libraries and tools that are necessary for this project. Since this is a relatively new topic and concept to both of us, it would require a lot of research in order to successfully implement all the functionalities in our program. In addition, the time that is available for us to accomplish this project is also very limited as we only have roughly about 3.5 weeks to complete the program as well as the project website. The process of classifying documents based on their content is forseen to be difficult and take longer time to accomplish. 
 ***
 ## Additional Course Content
 The most crucial topic for our project would be os and shutil, which are important libraries for working with files and directories on computers. In addition, various machine-learning libraries would also be helpful, which would aid us in implementing the function to classify documents based on their content. 
