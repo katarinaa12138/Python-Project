@@ -54,6 +54,7 @@ After accomplishing the basic functionality of our program, we will implement th
 >>To make the "File Organizer" program accessible to users, it is important to write clear and concise documentation for its functionality. This involves documenting the program's features and usage, as well as providing examples of input/output and expected results. Tools such as Sphinx, MkDocs, and Read the Docs can be used to generate documentation in various formats, such as HTML and PDF. In addition to documenting the program's functionality, it is important to provide instructions for its use. This includes creating a user guide or manual that explains how to install and run the program, as well as how to use its various features. Sphinx, MkDocs, and Read the Docs can also be used to generate user guides or manuals. To help users understand how to use the "File Organizer" program, it is helpful to provide examples of usage and expected results. This can be done using tools such as doctest, unittest, and pytest, which allow developers to create test cases and examples of usage that can be included in documentation.
 ## Project Schedule
 Once our project proposal gets approved, we will begin our project. We will have roughly 3.5 weeks to accomplish this project. The timeline of our project will follow the implementation plan we provided in the above section. 
+
 Our project schedule is as follows:
 - Week 1: Develop the Command-Line interface 
 - Week 2: Implement File Recognition and Organization Logic 
