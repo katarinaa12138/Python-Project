@@ -34,10 +34,9 @@ Through this project, our group wants to explore several Python skills and topic
 >>Once the file extensions and categories have been defined, it is necessary to write logic to move files to appropriate categories. This can be done using Python's os and shutil modules, which provide functions for moving files and directories. For example, the os.rename() function can be used to move files to a new directory, while shutil.copyfile() can be used to make a copy of a file in a different directory.
 
 ### Improve User Experience
+After accomplishing the basic functionality of our program, we will implement the following stretch goal:
 >Add Ability to Confirm or Undo File Moves
 >>To enhance the user experience, it may be helpful to add the ability to confirm or undo file moves. This allows users to preview file moves before they are executed, and to undo moves if necessary. Python's input() function can be used to prompt users to confirm or undo file moves, while the os.rename() function can be used to undo a file move.
-
-After accomplishing the basic functionality of our program, we will implement the following stretch goal:
 
 >Stretch Goal: Classify Documents into Sub-Folders Based on Content
 >>As a stretch goal, it may be possible to classify documents into sub-folders based on their content. This involves using machine learning algorithms to analyze the content of documents and classify them into categories such as work-related or personal documents. Python's scikit-learn, pandas, and NumPy libraries can be used to build and train machine learning models for document classification.
