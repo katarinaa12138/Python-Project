@@ -34,7 +34,7 @@ Through this project, our group wants to explore several Python skills and topic
 >>Once the file extensions and categories have been defined, it is necessary to write logic to move files to appropriate categories. This can be done using Python's os and shutil modules, which provide functions for moving files and directories. For example, the os.rename() function can be used to move files to a new directory, while shutil.copyfile() can be used to make a copy of a file in a different directory.
 
 ### Improve User Experience
-After accomplishing the basic functionality of our program, we will implement the following stretch goal:
+After accomplishing the basic functionality of our program, we will implement the following stretch goals:
 >Add Ability to Confirm or Undo File Moves
 >>To enhance the user experience, it may be helpful to add the ability to confirm or undo file moves. This allows users to preview file moves before they are executed, and to undo moves if necessary. Python's input() function can be used to prompt users to confirm or undo file moves, while the os.rename() function can be used to undo a file move.
 
@@ -62,7 +62,7 @@ Our project schedule is as follows:
 Testing and debugging, documentation, and website formation will be done throughout the three weeks.
 ***
 ## Collaboration Plan
-As this is a team project, it is important that all members of the team understand the goal as well as the implementation of the program. It is also important for both of us to be responsible and accountable for accomplishing the required or pre-defined tasks. We will be dividing and accomplishing the work evenly. Additionally, we will also communicate regularly and effectively to avoid any confusion and to keep each other updated on the progress. 
+As this is a team project, it is important that all members of the team understand the goal as well as the implementation of the program. It is also important for both of us to be responsible and accountable for accomplishing the required or pre-defined tasks. We will be dividing and accomplishing the work relatively evenly. Additionally, we will also communicate regularly and effectively to avoid any confusion and to keep each other updated on the progress. We believe that this will ensure an effective team collaboration. 
 ***
 ## Risks and Limitations
 The most significant threat to this project’s success would be learning the various Python libraries and tools that are necessary for this project. Since this is a relatively new topic and concept to both of us, it would require a lot of research in order to successfully implement all the functionalities in our program. In addition, the time that is available for us to accomplish this project is also very limited as we only have roughly about 3.5 weeks to complete the program as well as the project website. 
