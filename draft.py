@@ -26,7 +26,17 @@ extensions = {
     ".wav": "Music",
     ".wma": "Music",
     ".pdf": "PDFs",
+    ".xlsx": "Excel Files",
+    ".xls": "Excel Files",
+    ".docx": "Word Files",
+    ".doc": "Word Files",
+    ".pptx": "PowerPoint Files",
+    ".ppt": "PowerPoint Files",
+    ".csv": "CSV Files",
+    ".r": "R Files",
+    ".py": "Python Files",
 }
+
 
 # Define a function to organize the files in a folder
 def organize_files(folder_path):
@@ -48,6 +58,7 @@ def organize_files(folder_path):
         src_path = os.path.join(folder_path, file_name)
         dest_path = os.path.join(dest_dir, file_name)
         os.rename(src_path, dest_path)
+
 
 # Example usage:
 if __name__ == "__main__":
