@@ -55,7 +55,7 @@ Testing and debugging, documentation, and website formation will be done through
 As this is a team project, it is important that all members of the team understand the goal as well as the implementation of the program. It is also important for both of us to be responsible and accountable for accomplishing the required or pre-defined tasks. We will be dividing and accomplishing the work relatively evenly. Additionally, we will also communicate regularly and effectively to avoid any confusion and to keep each other updated on the progress. We believe that this will ensure an effective team collaboration. 
 
 Detailed work distribution:
-Week1: Katarina will give the first draft of the project with baseline functionlaities. Angela will be elborate on the first draft, after which Katarina will implement on additional features.
+Week1: Katarina will give the first draft of the project with baseline functionlaities. Angela and Katarina will be elborating on the first draft.
 
 Week2: Katarina is responsible for identifying documents for work purposes; Angela is responsible for identifying documents for entertainment purposes.
 
