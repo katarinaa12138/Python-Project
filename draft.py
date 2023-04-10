@@ -74,14 +74,16 @@ extensions = {
 
 def move_files(folder_path):
     """
-    This function moves all files in subdirectories to folder_path
+    This function moves all files in subdirectories to folder_path.
     """
     for dirpath, dirnames, filenames in os.walk(folder_path):
         for filename in filenames:
             src_path = os.path.join(dirpath, filename)
             dest_path = os.path.join(folder_path, filename)
             os.rename(src_path, dest_path)
-
+                    
+            
+    
 
 def delete_subdirectories(folder_path):
     """
@@ -114,8 +116,35 @@ def organize_files_in_folder(folder_path):
         # Move the file to the destination directory
         src_path = os.path.join(folder_path, file_name)
         dest_path = os.path.join(dest_dir, file_name)
-        os.rename(src_path, dest_path)
 
+        user_confirmation = False
+            
+        while not user_confirmation:
+            # Prompt users to confirm file move
+            confirm = input(f"Confirm to move {file_name} (y/n).")
+            if confirm.lower() == 'y':
+                # Move the files if user input y
+                os.rename(src_path, dest_path)
+                user_confirmation = True
+
+                # Check if users want to undo file move 
+                undo_file = input("Undo previous file move? (y/n)")
+                if undo_file.lower() == 'y':
+                    # Move file back to its original place
+                    os.rename(dest_path, src_path)
+                    print(f"Moved {file_name} back to original place.")
+                elif undo_file.lower() == 'n':
+                    print(f"{file_name} moved to new folder.")
+                else:
+                    print("Invalid Input: please input y or n.")
+
+            elif confirm.lower() == 'n':
+                # Do not move files if users input n
+                user_confirmation = True
+            else:
+                # If users input anything other than y or n
+                print("Invalid Input. Please input y or n.")
+        
 
 def organize_files(folder_path):
     """
