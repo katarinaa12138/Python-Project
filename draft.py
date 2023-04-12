@@ -159,5 +159,5 @@ def organize_files(folder_path):
 
 # Example usage:
 if __name__ == "__main__":
-    folder_path = "C:/Users/cwong3/Documents/temp"
+    folder_path = "C:/Users/xwang2//Desktop/Sample_Files"
     organize_files(folder_path)
