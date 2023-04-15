@@ -121,7 +121,7 @@ def organize_files_in_folder(folder_path):
             
         while not user_confirmation:
             # Prompt users to confirm file move
-            confirm = input(f"Confirm to move {file_name} (y/n).")
+            confirm = input(f"Confirm to move {file_name} (y/n):")
             if confirm.lower() == 'y':
                 # Move the files if user input y
                 os.rename(src_path, dest_path)
@@ -158,6 +158,8 @@ def organize_files(folder_path):
 
 
 # Example usage:
-if __name__ == "__main__":
-    folder_path = "C:/Users/xwang2//Desktop/Sample_Files"
-    organize_files(folder_path)
+# if __name__ == "__main__":
+    # folder_path = "C:/Users/xwang2//Desktop/Sample_Files"
+    # folder_path = "C:/Users/cwong3//Desktop/Sample_Files"
+
+    # organize_files(folder_path)
