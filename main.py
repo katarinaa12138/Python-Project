@@ -37,40 +37,6 @@ extensions = {
     ".py": "Python Files",
 }
 
-# # Define a function to organize the files in a folder
-# def organize_files(folder_path):
-#     # Move all files in subdirectories to folder_path
-#     for dirpath, dirnames, filenames in os.walk(folder_path):
-#         for filename in filenames:
-#             src_path = os.path.join(dirpath, filename)
-#             dest_path = os.path.join(folder_path, filename)
-#             os.rename(src_path, dest_path)
-
-#     # Delete all empty subdirectories in folder_path
-#     for dirpath, dirnames, filenames in os.walk(folder_path, topdown=False):
-#         for dirname in dirnames:
-#             dir_to_remove = os.path.join(dirpath, dirname)
-#             if not os.listdir(dir_to_remove):
-#                 os.rmdir(dir_to_remove)
-
-#     # Organize all the files in the folder
-#     for file_name in os.listdir(folder_path):
-#         # Get the file extension
-#         file_extension = os.path.splitext(file_name)[1].lower()
-
-#         # Get the destination directory for this file
-#         if file_extension in extensions:
-#             dest_dir = os.path.join(folder_path, extensions[file_extension])
-#         else:
-#             dest_dir = os.path.join(folder_path, "Other")
-
-#         # Create the destination directory if it doesn't exist
-#         os.makedirs(dest_dir, exist_ok=True)
-
-#         # Move the file to the destination directory
-#         src_path = os.path.join(folder_path, file_name)
-#         dest_path = os.path.join(dest_dir, file_name)
-#         os.rename(src_path, dest_path)
 
 def move_files(folder_path):
     """
