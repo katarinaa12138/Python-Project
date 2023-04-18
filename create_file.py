@@ -33,6 +33,9 @@ file_extensions = {
     'md': '.md'
 }
 
+# Define size ranges
+size_ranges = [(0, 1024), (1024, 1024*10), (1024*10, 1024**2), (1024**2, 1024**3)]
+
 # Desktop path
 desktop_path = os.path.expanduser("~/Desktop")
 
@@ -44,9 +47,11 @@ os.makedirs(folder_path, exist_ok=True)
 # Generate sample files in the folder
 for file_type, new_ext in file_extensions.items():
     for i in range(1, 8):
+        size_range = random.choice(size_ranges)
+        file_size = random.randint(size_range[0], size_range[1])
         file_name = f"{file_type}_{i}{new_ext}"
         file_path = os.path.join(folder_path, file_name)
         with open(file_path, 'wb') as file:
-            file.write(os.urandom(i*1024*1024))  # Write random data to file
+            file.write(os.urandom(file_size))  # Write random data to file
           
 print("Sample files created successfully in folder: ", folder_path)
