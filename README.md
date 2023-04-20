@@ -2,7 +2,6 @@
 Katarina Wang, Angela Wong
 
 ## User Instructions
-### Download Files
 1. Navigate and download the files 'main.py', 'command_line.py', and 'create_files.py'.
 (Note: Make sure you can navigate the file locations after downloaded.)
 
