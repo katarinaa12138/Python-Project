@@ -1,5 +1,8 @@
 import os
 from pathlib import Path
+import os
+import shutil
+from datetime import datetime
 
 # Define a dictionary that maps each file extension to a directory
 extensions = {
@@ -188,7 +191,26 @@ def organize_files_by_size(folder_path):
                     print(f"{file} moved to {dest_dir}.")
 
 
-
+def organize_files_by_date(folder_path):
+    """
+    This function organizes all the files in the folder according to their creation dates.
+    """
+    for file_name in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, file_name)
+        
+        # Get the creation time of the file
+        creation_time = os.path.getctime(file_path)
+        creation_date = datetime.fromtimestamp(creation_time).date()
+        
+        # Create a directory with the name of the date if it doesn't exist
+        date_dir = os.path.join(folder_path, str(creation_date))
+        if not os.path.exists(date_dir):
+            os.mkdir(date_dir)
+            
+        # Move the file to the date directory
+        dest_path = os.path.join(date_dir, file_name)
+        shutil.move(file_path, dest_path)
+        
 def organize_files(folder_path):
     """
     This function combines all the previous functions and organizes the files.
@@ -198,6 +220,8 @@ def organize_files(folder_path):
     delete_subdirectories(folder_path)
     organize_files_in_folder(folder_path)
     print("Sorting Completed")
+
+
 
 
 # Example usage:
