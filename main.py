@@ -256,7 +256,7 @@ def organize_files(folder_path):
     
     print("How would you like to organize your files?")
     print("1. By size")
-    print("2. By date")
+    print("2. By year")
     print("3. By file extensions")
     
     choice = input("Enter your choice (1/2/3): ")
@@ -266,7 +266,7 @@ def organize_files(folder_path):
         print("Sorting files by size.....")
         organize_files_by_size(folder_path)
     elif choice == "2":
-        print("Sorting files by date.....")
+        print("Sorting files by year.....")
         organize_files_by_date(folder_path)
     elif choice == "3":
         print("Sorting files by file extensions.....")

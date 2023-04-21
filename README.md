@@ -19,7 +19,7 @@ python command_line.py C:/Users/cwong3//Desktop/Sample_Files
 ```
 
 6. Follow the prompts in the terminal to organzie your files.
-    - You may choose to organize you files by size, date, or file extensions.
+    - You may choose to organize you files by size, year, or file extensions.
     - You may choose to organize the files one-by-one or move the files all at once. 
 
 7. Your files will be organized into predefined folders!
