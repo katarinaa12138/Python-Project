@@ -193,7 +193,6 @@ def organize_files_by_size(folder_path):
                 else:
                     # If automatic sorting is chosen, move the file without confirmation
                     os.rename(src_path, dest_path)
-                    print(f"{file} moved to {dest_dir}.")
 
 
 def organize_files_by_date(folder_path):
