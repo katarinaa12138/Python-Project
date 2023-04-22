@@ -42,10 +42,12 @@ python command_line.py C:/Users/cwong3//Desktop/Sample_Files
     - You may choose to organize you files by size, year, or file extensions.
     <!-- ![step4](image\how_to_organize_step.png) --> 
     <img src="image\how_to_organize_step.png" width="200"/>
+
     - You may choose to organize the files one-by-one or move the files all at once. 
     <!-- ![step4](image\one_by_one.png) --> 
     <img src="image\one_by_one.png" width="200"/>
-    - id you choose to move one by one, you will go through each file and confirm the move
+
+    - If you choose to move one by one, you will go through each file and confirm the move
     <!-- ![step4](image\undoandconfirm.png) --> 
     <img src="image\undoandconfirm.png" width="200"/>
 
