@@ -5,6 +5,7 @@ Katarina Wang, Angela Wong
 - [Descriptions](#descriptions)
 - [Dependencies](#dependencies)
 - [Instructions](#instructions)
+- [Appendix](#appendix)
 - [Contributing](#contributing)
  
 ## Descriptions
@@ -54,6 +55,14 @@ There are no external libraries required for this code. However, the code does m
 7. Your files will be organized into predefined folders!
 
 
+## Appendix
+Python Software Foundation. “os — Miscellaneous Operating System Interfaces.” Python 3.10.1 Documentation, 26 Mar. 2023, https://docs.python.org/3/library/os.html.
+
+Python Software Foundation. “shutil — High-Level File Operations.” Python 3.10.1 Documentation, 26 Mar. 2023, https://docs.python.org/3/library/shutil.html.
+
+Python Software Foundation. “pathlib — Object-Oriented Filesystem Paths.” Python 3.10.1 Documentation, 26 Mar. 2023, https://docs.python.org/3/library/pathlib.html.
+
 ## Contributing
 We welcome contributions to the project. If you find a bug or have a suggestion for improvement, please report it by opening an issue on the project's GitHub page. If you would like to make a change to the code, please fork the repository, make your changes, and submit a pull request. We will review your changes and merge them if they are appropriate.
  
+
