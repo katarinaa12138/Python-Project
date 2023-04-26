@@ -51,7 +51,7 @@ There are no external libraries required for this code. However, the code does m
 
 7. Your files will be organized into predefined folders!
 
-### For further instructions, here is a demo video.
+### For further instructions, here is a demo video:
 <!-- ![video](images/python_demo.gif) -->
 <img src="image/python_demo.gif" alt = "Demo Video"/>
 
