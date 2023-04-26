@@ -33,7 +33,7 @@ There are no external libraries required for this code. However, the code does m
 
 5. After setting the working directory, type the command, `python command_line.py [Path to Folder You Want to Organize]`.
     
-Example: 
+    Example: 
     ```Python
     python command_line.py C:/Users/cwong3//Desktop/Sample_Files
     ```
@@ -52,7 +52,7 @@ Example:
 7. Your files will be organized into predefined folders!
 
 ### For further instructions, here is a demo video.
-![Python Demo](image\python_demo.gif)
+    <img src="image\python_demo.gif" width="400"/>
 
 ## Appendix
 Python Software Foundation. “os — Miscellaneous Operating System Interfaces.” Python 3.10.1 Documentation, 26 Mar. 2023, https://docs.python.org/3/library/os.html.
