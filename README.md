@@ -4,6 +4,7 @@ Katarina Wang, Angela Wong
 ## Table of Contents
 - [Descriptions](#descriptions)
 - [Dependencies](#dependencies)
+- [Demo Video](#demo-video)
 - [Instructions](#instructions)
 - [Appendix](#appendix)
 - [Contributing](#contributing)
@@ -16,21 +17,22 @@ This program requires Python 3.x.
 
 There are no external libraries required for this code. However, the code does make use of several Python built-in modules, including os, shutil, datetime, and pathlib. These modules are included in the standard Python distribution, so there is no need to install anything extra.
 
+## Demo Video
+<video width="320" height="240" controls>
+  <source src="video\python_demo.mp4" type="video/mp4">
+
 ## Instructions
 1. Navigate and download the files 'main.py', 'command_line.py', and 'create_files.py'.
 (Note: Make sure you can navigate the file locations after downloaded.)
-    <!-- ![step1](image\Step1.png) --> 
     <img src="image\Step1.png" width="400"/>
 
 2. [Optional] If you don't have files to organize, you can try our program with sample files. Open "create_files.py" in Visual Studio Code, and run the file. You should see a folder named "Sample_Files" created on you desktop. 
-    <!-- ![step2](image\Optional_Step2.png) --> 
     <img src="image\Optional_Step2.png" width="400"/>
 
 3. Open you Command Prompt Terminal on you personal computer.
 
 4. Navigate to the location where you stored you downloaded files from step 1. 
 (Note: use 'cd' to navigate through the file system by changing the current working directory.)
-    <!-- ![step4](image\step4.png) --> 
     <img src="image\step4.png" width="400"/>
 
 5. After setting the working directory, type the command, `python command_line.py [Path to Folder You Want to Organize]`.
@@ -41,15 +43,12 @@ There are no external libraries required for this code. However, the code does m
 
 6. Follow the prompts in the terminal to organzie your files.
     - You may choose to organize you files by size, year, or file extensions.
-        <!-- ![step4](image\how_to_organize_step.png) --> 
         <img src="image\how_to_organize_step.png" width="200"/>
 
     - You may choose to organize the files one-by-one or move the files all at once. 
-        <!-- ![step4](image\one_by_one.png) --> 
         <img src="image\one_by_one.png" width="200"/>
 
     - If you choose to move one by one, you will go through each file and confirm the move
-        <!-- ![step4](image\undoandconfirm.png) --> 
         <img src="image\undoandconfirm.png" width="200"/>
 
 7. Your files will be organized into predefined folders!
