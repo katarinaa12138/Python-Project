@@ -18,8 +18,11 @@ This program requires Python 3.x.
 There are no external libraries required for this code. However, the code does make use of several Python built-in modules, including os, shutil, datetime, and pathlib. These modules are included in the standard Python distribution, so there is no need to install anything extra.
 
 ## Demo Video
+Here is the video demonstrating how the file organizer works:
+
 <video width="320" height="240" controls>
   <source src="video\python_demo.mp4" type="video/mp4">
+</video>
 
 ## Instructions
 1. Navigate and download the files 'main.py', 'command_line.py', and 'create_files.py'.
