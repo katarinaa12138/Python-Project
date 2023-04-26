@@ -5,6 +5,7 @@ Katarina Wang, Angela Wong
 - [Descriptions](#descriptions)
 - [Dependencies](#dependencies)
 - [Instructions](#instructions)
+- [Demo Video](#demo-video)
 - [Appendix](#appendix)
 - [Contributing](#contributing)
  
@@ -44,14 +45,17 @@ There are no external libraries required for this code. However, the code does m
         <img src="image\how_to_organize_step.png" width="200"/>
 
     - You may choose to organize the files one-by-one or move the files all at once. 
+
         <img src="image\one_by_one.png" width="200"/>
 
     - If you choose to move one by one, you will go through each file and confirm the move
+
         <img src="image\undoandconfirm.png" width="200"/>
 
 7. Your files will be organized into predefined folders!
 
-### For further instructions, here is a demo video:
+### Demo Video
+For further instructions, here is a demo video:
 <!-- ![video](images/python_demo.gif) -->
 <img src="image/python_demo.gif" alt = "Demo Video"/>
 
