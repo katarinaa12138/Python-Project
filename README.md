@@ -21,7 +21,7 @@ There are no external libraries required for this code. However, the code does m
 Here is the video demonstrating how the file organizer works:
 
 <video width="320" height="240" controls>
-  <source src="video\python_demo.mp4" type="video/mp4">
+  <source src="video/python_demo.mp4" type="video/mp4">
 </video>
 
 ## Instructions
