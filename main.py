@@ -259,8 +259,8 @@ def organize_files(folder_path):
     print("3. By file extensions")
     
     choice = input("Enter your choice (1/2/3): ")
-    # move_files(folder_path)
-    # delete_subdirectories(folder_path)
+    move_files(folder_path)
+    delete_subdirectories(folder_path)
     if choice == "1":
         print("Sorting files by size.....")
         organize_files_by_size(folder_path)
@@ -281,8 +281,9 @@ def organize_files(folder_path):
 # Example usage:
 # if __name__ == "__main__":
     # folder_path = "C:/Users/xwang2//Desktop/Sample_Files"
-    # folder_path = "C:/Users/cwong3//Desktop/Sample_Files"
-    # organize_files_by_size(folder_path)
-    # organize_files_by_date(folder_path)
+    # # folder_path = "C:/Users/cwong3//Desktop/Sample_Files"
+    # # organize_files_by_size(folder_path)
+    # # organize_files_by_date(folder_path)
     # organize_files(folder_path)
+
 
