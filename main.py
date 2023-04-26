@@ -50,8 +50,8 @@ def move_files(folder_path):
             src_path = os.path.join(dirpath, filename)
             dest_path = os.path.join(folder_path, filename)
             os.rename(src_path, dest_path)
-                    
-            
+
+
 def delete_subdirectories(folder_path):
     """
     This function deletes all empty subdirectories in folder_path.
@@ -68,7 +68,7 @@ def organize_files_by_extensions(folder_path):
     This function organizes all the files in the folder according to file extensions.
     """
     organize_one_by_one = input("Do you want to organize the files one by one? (y/n): ")
-    
+
     for file_name in os.listdir(folder_path):
         # Get the file extension
         file_extension = os.path.splitext(file_name)[1].lower()
@@ -88,29 +88,29 @@ def organize_files_by_extensions(folder_path):
 
         user_confirmation = False
 
-        if organize_one_by_one.lower() == 'n':
+        if organize_one_by_one.lower() == "n":
             os.rename(src_path, dest_path)
         else:
             while not user_confirmation:
                 # Prompt users to confirm file move
                 confirm = input(f"Confirm to move {file_name} (y/n):")
-                if confirm.lower() == 'y':
+                if confirm.lower() == "y":
                     # Move the file if user input y
                     os.rename(src_path, dest_path)
                     user_confirmation = True
 
                     # Check if users want to undo file move
                     undo_file = input("Undo previous file move? (y/n)")
-                    if undo_file.lower() == 'y':
+                    if undo_file.lower() == "y":
                         # Move file back to its original place
                         os.rename(dest_path, src_path)
                         print(f"Moved {file_name} back to original place.")
-                    elif undo_file.lower() == 'n':
+                    elif undo_file.lower() == "n":
                         print(f"{file_name} moved to new folder.")
                     else:
                         print("Invalid Input: please input y or n.")
 
-                elif confirm.lower() == 'n':
+                elif confirm.lower() == "n":
                     # Do not move the file if user input n
                     user_confirmation = True
                 else:
@@ -118,25 +118,37 @@ def organize_files_by_extensions(folder_path):
                     print("Invalid Input. Please input y or n.")
 
 
-
-
 def organize_files_by_size(folder_path):
     """
     This function organizes all files in the folder according to their sizes.
     """
-    files = [file for file in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, file))]
+    files = [
+        file
+        for file in os.listdir(folder_path)
+        if os.path.isfile(os.path.join(folder_path, file))
+    ]
     # Get the sizes of all files in the folder
-    file_sizes = [(file, os.path.getsize(os.path.join(folder_path, file))) for file in files]
+    file_sizes = [
+        (file, os.path.getsize(os.path.join(folder_path, file))) for file in files
+    ]
 
     # Sort files by their size
     file_sizes.sort(key=lambda x: x[1])
 
     # Create size ranges
-    size_ranges = [(0, 1024), (1024, 1024**2), (1024**2, 1024**3), (1024**3, float("inf"))]
+    size_ranges = [
+        (0, 1024),
+        (1024, 1024**2),
+        (1024**2, 1024**3),
+        (1024**3, float("inf")),
+    ]
     size_range_names = ["Small", "Medium", "Large", "Very Large"]
 
     # Create a dictionary that maps each file size range to a directory
-    size_range_to_dir = {size_range_names[i]: os.path.join(folder_path, size_range_names[i]) for i in range(len(size_range_names))}
+    size_range_to_dir = {
+        size_range_names[i]: os.path.join(folder_path, size_range_names[i])
+        for i in range(len(size_range_names))
+    }
 
     # Create the directories if they don't exist
     for dir_name in size_range_to_dir.values():
@@ -146,9 +158,9 @@ def organize_files_by_size(folder_path):
     manual_sort = False
     while not manual_sort:
         user_input = input("Do you want to organize the files one by one? (y/n): ")
-        if user_input.lower() == 'y':
+        if user_input.lower() == "y":
             manual_sort = True
-        elif user_input.lower() == 'n':
+        elif user_input.lower() == "n":
             manual_sort = False
             break
         else:
@@ -168,23 +180,23 @@ def organize_files_by_size(folder_path):
                     while not user_confirmation:
                         # Prompt users to confirm file move
                         confirm = input(f"Confirm to move {file} (y/n):")
-                        if confirm.lower() == 'y':
+                        if confirm.lower() == "y":
                             # Move the files if user input y
                             os.rename(src_path, dest_path)
                             user_confirmation = True
 
-                            # Check if users want to undo file move 
+                            # Check if users want to undo file move
                             undo_file = input("Undo previous file move? (y/n)")
-                            if undo_file.lower() == 'y':
+                            if undo_file.lower() == "y":
                                 # Move file back to its original place
                                 os.rename(dest_path, src_path)
                                 print(f"Moved {file} back to original place.")
-                            elif undo_file.lower() == 'n':
+                            elif undo_file.lower() == "n":
                                 print(f"{file} moved to {dest_dir}.")
                             else:
                                 print("Invalid Input: please input y or n.")
 
-                        elif confirm.lower() == 'n':
+                        elif confirm.lower() == "n":
                             # Do not move files if users input n
                             user_confirmation = True
                         else:
@@ -200,47 +212,47 @@ def organize_files_by_date(folder_path):
     This function organizes all the files in the folder according to their creation year.
     """
     organize_one_by_one = input("Do you want to organize the files one by one? (y/n): ")
-    
+
     for file_name in os.listdir(folder_path):
         file_path = os.path.join(folder_path, file_name)
-        
+
         # Get the creation time of the file
         creation_time = os.path.getctime(file_path)
         creation_year = datetime.fromtimestamp(creation_time).year
-        
+
         # Create a directory with the name of the year if it doesn't exist
         year_dir = os.path.join(folder_path, str(creation_year))
         if not os.path.exists(year_dir):
             os.mkdir(year_dir)
-            
+
         # Move the file to the year directory
         dest_path = os.path.join(year_dir, file_name)
 
         user_confirmation = False
 
-        if organize_one_by_one.lower() == 'n':
+        if organize_one_by_one.lower() == "n":
             shutil.move(file_path, dest_path)
         else:
             while not user_confirmation:
                 # Prompt users to confirm file move
                 confirm = input(f"Confirm to move {file_name} (y/n):")
-                if confirm.lower() == 'y':
+                if confirm.lower() == "y":
                     # Move the file if user input y
                     shutil.move(file_path, dest_path)
                     user_confirmation = True
 
                     # Check if users want to undo file move
                     undo_file = input("Undo previous file move? (y/n)")
-                    if undo_file.lower() == 'y':
+                    if undo_file.lower() == "y":
                         # Move file back to its original place
                         shutil.move(dest_path, file_path)
                         print(f"Moved {file_name} back to original place.")
-                    elif undo_file.lower() == 'n':
+                    elif undo_file.lower() == "n":
                         print(f"{file_name} moved to new folder.")
                     else:
                         print("Invalid Input: please input y or n.")
 
-                elif confirm.lower() == 'n':
+                elif confirm.lower() == "n":
                     # Do not move the file if user input n
                     user_confirmation = True
                 else:
@@ -252,12 +264,12 @@ def organize_files(folder_path):
     """
     This function combines all the previous functions and organizes the files.
     """
-    
+
     print("How would you like to organize your files?")
     print("1. By size")
     print("2. By year")
     print("3. By file extensions")
-    
+
     choice = input("Enter your choice (1/2/3): ")
     move_files(folder_path)
     delete_subdirectories(folder_path)
@@ -273,17 +285,14 @@ def organize_files(folder_path):
     else:
         print("Invalid choice. Please try again.")
         return
-    
-    print("Sorting Completed")
 
+    print("Sorting Completed")
 
 
 # Example usage:
 # if __name__ == "__main__":
-    # folder_path = "C:/Users/xwang2//Desktop/Sample_Files"
-    # # folder_path = "C:/Users/cwong3//Desktop/Sample_Files"
-    # # organize_files_by_size(folder_path)
-    # # organize_files_by_date(folder_path)
-    # organize_files(folder_path)
-
-
+# folder_path = "C:/Users/xwang2//Desktop/Sample_Files"
+# # folder_path = "C:/Users/cwong3//Desktop/Sample_Files"
+# # organize_files_by_size(folder_path)
+# # organize_files_by_date(folder_path)
+# organize_files(folder_path)
