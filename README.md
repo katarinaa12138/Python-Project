@@ -53,7 +53,7 @@ There are no external libraries required for this code. However, the code does m
 
 ### For further instructions, here is a demo video.
     
-    ![Demo Video] (https://github.com/katarinaa12138/Python-Project/blob/main/image/python_demo.gif)
+    <img src="https://github.com/katarinaa12138/Python-Project/blob/main/image/python_demo.gif">
 
 ## Appendix
 Python Software Foundation. “os — Miscellaneous Operating System Interfaces.” Python 3.10.1 Documentation, 26 Mar. 2023, https://docs.python.org/3/library/os.html.
