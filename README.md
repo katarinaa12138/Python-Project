@@ -19,6 +19,7 @@ There are no external libraries required for this code. However, the code does m
 ## Instructions
 1. Navigate and download the files 'main.py', 'command_line.py', and 'create_files.py'.
 (Note: Make sure you can navigate the file locations after downloaded.)
+    
     <img src="image\Step1.png" width="400"/>
 
 2. [Optional] If you don't have files to organize, you can try our program with sample files. Open "create_files.py" in Visual Studio Code, and run the file. You should see a folder named "Sample_Files" created on you desktop. 
@@ -31,13 +32,15 @@ There are no external libraries required for this code. However, the code does m
     <img src="image\step4.png" width="400"/>
 
 5. After setting the working directory, type the command, `python command_line.py [Path to Folder You Want to Organize]`.
-    Example: 
+    
+Example: 
     ```Python
     python command_line.py C:/Users/cwong3//Desktop/Sample_Files
     ```
 
 6. Follow the prompts in the terminal to organzie your files.
     - You may choose to organize you files by size, year, or file extensions.
+        
         <img src="image\how_to_organize_step.png" width="200"/>
 
     - You may choose to organize the files one-by-one or move the files all at once. 
@@ -48,6 +51,8 @@ There are no external libraries required for this code. However, the code does m
 
 7. Your files will be organized into predefined folders!
 
+### For further instructions, here is a demo video.
+![Python Demo](image\python_demo.gif)
 
 ## Appendix
 Python Software Foundation. “os — Miscellaneous Operating System Interfaces.” Python 3.10.1 Documentation, 26 Mar. 2023, https://docs.python.org/3/library/os.html.
